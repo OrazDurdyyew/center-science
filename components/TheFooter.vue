@@ -1,103 +1,147 @@
+<script setup lang="ts"></script>
+
 <template>
   <footer class="footer">
-    <div class="footer__wrapper __container">
-      <div class="footer__wrapper-items">
-        <div class="footer__wrapper-item">
-          <h2>Научное издательство «Всемирный ученый»</h2>
-          <h2>Международный научный журнал «Всемирный ученый»</h2>
-          <h2>Ул. Козлова 2, Минск. 220034, Беларусь</h2>
-          <h2>Электронная почта: <span style="text-decoration: underline">redactor@wsemiruch.online</span></h2>
+    <div class="footer__container">
+      <div class="footer__body">
+        <div class="footer__copyright">
+          <div class="footer__copyright-item">
+            <p>Публичная оферта</p>
+            <p>Политика конфиденциальности</p>
+          </div>
+          <div class="footer__copyright-item-border">
+            © 2024 Все права защищены.
+          </div>
         </div>
-      </div>
-      <div class="footer__wrapper-item">
-        <div class="footer-menu__items">
-          <nuxt-link exact :to="localePath('/')" class="footer-menu__item">{{ $t('menu.main') }}</nuxt-link>
-          <nuxt-link :to="localePath('/about')" class="footer-menu__item"> {{ $t('menu.about') }}</nuxt-link>
-          <nuxt-link :to="localePath('/current')" class="footer-menu__item">{{ $t('menu.current') }}</nuxt-link>
-          <nuxt-link :to="localePath('/archive')" class="footer-menu__item">{{ $t('menu.archive') }}</nuxt-link>
+        <div class="footer__menu">
+          <div class="menu__item">
+            <p>Научное издательство «Всемирный ученый»</p>
+            <p>Международный научный журнал «Всемирный ученый»</p>
+            <p>Ул. Козлова 2, Минск. 220034, Беларусь</p>
+            <p>Электронная почта: redactor@wsemiruch.online</p>
+          </div>
+          <ul class="menu__item">
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/">Главная</nuxt-link>
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/">О Журнале</nuxt-link>
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/">Свежий Номер</nuxt-link>
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/">Архив</nuxt-link>
+            </li>
+          </ul>
+          <ul class="menu__item">
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/"
+                >Правило для авторов</nuxt-link
+              >
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/">
+                Рецензирование</nuxt-link
+              >
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/"
+                >Этика публикаций</nuxt-link
+              >
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/">Оплата</nuxt-link>
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__item-link" to="/">Контакты</nuxt-link>
+            </li>
+          </ul>
         </div>
-      </div>
-      <div class="footer__wrapper-item">
-        <div class="footer-menu__items">
-          <nuxt-link exact :to="localePath('/')" class="footer-menu__item">Правило для авторов</nuxt-link>
-          <nuxt-link :to="localePath('/')" class="footer-menu__item"> Рецензирование</nuxt-link>
-          <nuxt-link :to="localePath('/rules-authors')" class="footer-menu__item">Этика публикаций</nuxt-link>
-          <nuxt-link :to="localePath('/')" class="footer-menu__item">Оплата</nuxt-link>
-          <nuxt-link :to="localePath('/')" class="footer-menu__item">Контакты</nuxt-link>
-        </div>
-      </div>
-    </div>
-    <div class="footer__bottom">
-      <div class="footer__bottom-items __container">
-        <div class="footer__bottom-item">
-          <h2>Публичная оферта</h2>
-          <h2>Политика конфиденциальности</h2>
-        </div>
-        <div class="footer__bottom-item">© 2023 Все права защищены.</div>
       </div>
     </div>
   </footer>
 </template>
 
-<script>
-  export default {}
-</script>
+<style scoped lang="scss">
+.footer {
+  margin-top: 32px;
+  background: var(--primary);
+  &__body {
+    padding: 4.55rem 0 5.45rem;
+  }
+  &__copyright {
+    display: flex;
+  }
+  &__menu {
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p {
+      margin-bottom: 10px;
+    }
+  }
+  &__copyright-item {
+    padding-right: 1.8rem;
 
-<style lang="scss" scoped>
-  .footer {
-    background-color: var(--primary);
-    color: var(--white);
-    &__wrapper {
-      display: flex;
-      justify-content: space-between;
-      padding-top: 60px;
-      padding-bottom: 10px;
-
-      @media (max-width: 700px) {
-        flex-direction: column;
-      }
-      &-item {
-        h2 {
-          margin-bottom: 15px;
-        }
+    p {
+      font-size: 16px;
+      color: var(--text);
+      &:first-child {
+        margin-bottom: 7px;
       }
     }
-    &-menu {
-      &__items {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
-      }
-      &__item {
-        flex: 1 0 auto;
-        font-size: 15px;
-        line-height: 18px;
-        text-align: center;
-        text-transform: uppercase;
-        font-weight: 500;
-        margin-bottom: 10px;
-        color: #fff;
-        font-family: 'PT Sans', sans-serif;
+  }
+  &__copyright-item-border {
+    font-size: 16px;
+    color: var(--text);
+    padding-left: 1.8rem;
+    border-left: 1px solid #dcdcdc;
+  }
+}
+.menu {
+  &__item {
+    p {
+      font-size: 16px;
+      color: var(--text);
+      position: relative;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background: var(--border-bottom);
         transition: 0.3s ease;
-        border-bottom: 1px solid transparent;
-        &:hover {
-          border-color: #fff;
-        }
+        width: 0;
+        height: 2px;
       }
-    }
-    &__bottom {
-      border-top: 1px solid #fff;
-      padding: 5px;
-      &-items {
-        display: flex;
-        align-items: center;
-        gap: 40px;
-      }
-      &-item {
-        h2 {
-          margin-bottom: 5px;
+      &:hover {
+        &::before {
+          width: 100%;
         }
       }
     }
   }
+  &__list {
+    margin-bottom: 10px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      background: var(--border-bottom);
+      transition: 0.3s ease;
+      width: 0;
+      height: 2px;
+    }
+    &:hover {
+      &::before {
+        width: 100%;
+      }
+    }
+  }
+
+  &__item-link {
+  }
+}
 </style>

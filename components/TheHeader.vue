@@ -1,162 +1,264 @@
-<template>
-  <header class="header">
-    <div class="header__wrapper __container">
-      <div class="header__title">
-        ВСЕМИРНЫЙ УЧЕНЫЙ <br />
-        WORLD SCIENTIST
-      </div>
+<script setup lang="ts"></script>
 
-      <div class="header__languages">
-        <div style="display: flex; flex-direction: column; padding-right: 50px">
-          <span>ISSN 2712-083D</span>
+<template>
+  <div class="header">
+    <div class="header-box">
+      <div class="header__container">
+        <div class="header__body">
+          <div class="header__logo">
+            <img
+              src="https://ars.els-cdn.com/content/image/X03043894.jpg"
+              alt=""
+            />
+          </div>
+          <div class="header__title">
+            <h1>Journal of Hazardous Materials</h1>
+            <p>Supports open access</p>
+          </div>
+          <div class="header__score">
+            <div class="citescore">
+              <button>
+                <p>25.4</p>
+                <p style="font-size: 14px">CiteScore</p>
+              </button>
+            </div>
+            <div class="factor">
+              <button>
+                <p>12.2</p>
+                <p style="font-size: 14px">Impact Factor</p>
+              </button>
+            </div>
+          </div>
         </div>
-        <!-- <span
-          v-for="(lang, index) in $i18n.locales"
-          :key="index"
-          @click="setLocale(lang.code)"
-          class="header__languages-item"
-          :class="{ active: lang.code === $i18n.locale }"
-          >{{ lang.lang }}</span
-        > -->
-      </div>
-      <div @click="$store.dispatch('toggleMenu')" class="burger-toggle" :class="{ 'is-active': isActive }">
-        <span class="burger-toggle__line"></span>
-        <span class="burger-toggle__line"></span>
-        <span class="burger-toggle__line"></span>
       </div>
     </div>
-  </header>
+    <div class="header__navigation">
+      <div class="header__navigation-wrapper __container">
+        <nav class="header__menu">
+          <ul class="menu__item">
+            <li class="menu__list">
+              <nuxt-link class="menu__link" to="/">Главная</nuxt-link>
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__link" to="/journal">О Журнале</nuxt-link>
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__link" to="/">Свежий Номер</nuxt-link>
+            </li>
+            <li class="menu__list">
+              <nuxt-link class="menu__link" to="/">Архив</nuxt-link>
+            </li>
+          </ul>
+        </nav>
+        <nav class="header__reviewing">
+          <ul class="reviewing__item">
+            <li class="reviewing__list">
+              <nuxt-link class="reviewing__link" to="/">Главная</nuxt-link>
+            </li>
+            <li class="reviewing__list">
+              <nuxt-link class="reviewing__link" to="/">О Журнале</nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
 </template>
+<style scoped lang="scss">
+.header {
+  position: relative;
+  margin-top: 50px;
 
-<script>
-  import { mapGetters } from 'vuex'
-
-  export default {
-    data() {
-      return {}
-    },
-    computed: {
-      ...mapGetters(['isActive'])
-    },
-    methods: {
-      setLocale(lang) {
-        if (this.$i18n.locale !== lang) {
-          this.$i18n.setLocale(lang)
+  &__body {
+    display: flex;
+    align-items: center;
+    height: 170px;
+  }
+  &__logo {
+    img {
+      width: 150px;
+      height: 200px;
+      position: relative;
+      top: -25px;
+    }
+  }
+  &__title {
+    margin-left: 40px;
+    z-index: 50;
+    color: var(--white);
+    flex: 1 1 0%;
+    max-width: 100%;
+    min-width: 0px;
+    padding: 0.8rem;
+    h1 {
+      position: relative;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      font-size: 32px;
+      margin-bottom: 10px;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        height: 2px;
+        width: 0;
+        background: var(--white);
+        transition: 0.3s ease;
+      }
+      &:hover {
+        &::before {
+          width: 450px;
         }
-        this.showLang = !this.showLang
+      }
+    }
+    p {
+      font-size: 15px;
+      position: relative;
+      border-bottom: 2px solid transparent;
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        background: var(--white);
+        height: 2px;
+        width: 0;
+        transition: 0.3s ease;
+      }
+      &:hover {
+        &::before {
+          width: 150px;
+        }
       }
     }
   }
-</script>
 
-<style lang="scss" scoped>
-  .header {
-    background: var(--primary);
-    margin-bottom: 10px;
-    color: #fff;
+  &__score {
+    display: flex;
+    align-items: center;
+  }
 
-    &__wrapper {
+  &__categories {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__navigation {
+    border-bottom: 1px solid var(--black);
+    &-wrapper {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 8px 25px;
-    }
-    &__title {
-      white-space: nowrap;
-      margin-top: 5px;
-      line-height: 16px;
-      font-size: 12px;
-      text-transform: uppercase;
-      @media (max-width: 700px) {
-        display: none;
-      }
-    }
-    &__menu {
-      flex: 1 1 auto;
-      margin-left: 25px;
-      &-items {
-        display: flex;
-        align-items: center;
-      }
-      &-item {
-        margin-left: 15px;
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 24px;
-        cursor: pointer;
-        user-select: none;
-        transition: 0.3s ease;
-        &:hover {
-          color: var(--hover);
-        }
-        &._active {
-          color: var(--hover);
-        }
-      }
-    }
-    &__languages {
-      &-item {
-        cursor: pointer;
-        font-size: 15px;
-        font-style: normal;
-        font-weight: 800;
-        transition: 0.3s ease;
-        position: relative;
-        margin-left: 10px;
-
-        &:hover {
-          color: #666;
-        }
-        &:not(:last-child)::after {
-          position: absolute;
-          right: -8px;
-          content: '|';
-          color: #fff;
-          font-weight: 600;
-        }
-        &.active {
-          color: #666;
-        }
-      }
-      &-arrow {
-        color: #fff;
-        font-weight: 800;
-        text-align: center;
-      }
     }
   }
+}
+.header-box {
+  width: 100%;
+  height: 170px;
+  background-color: var(--black);
+}
 
-  .burger-toggle {
-    z-index: 3;
-    flex-direction: column;
+.citescore {
+  button {
+    background: none;
+    color: var(--white);
+    padding: 0 16px;
+    p {
+      text-align: start;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.factor {
+  position: relative;
+  button {
+    background: none;
+    color: var(--white);
+    padding: 0px 16px 0px 48px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 129px;
+      height: 60px;
+      width: 0.5px;
+      background: var(--white);
+    }
+    p {
+      text-align: start;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+}
+.menu {
+  &__item {
+    display: flex;
+    align-items: center;
     justify-content: space-between;
-    width: 20px;
-    height: 15px;
-    cursor: pointer;
+    &:last-child {
+      border-right: 1px solid rgb(220, 220, 220);
+    }
+  }
+  &__list {
     position: relative;
-
-    display: none;
-    @media (max-width: 700px) {
-      display: flex;
+    margin: 21px 40px;
+    border-bottom: 2px solid transparent;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      background: var(--border-bottom);
+      height: 2px;
+      transition: 0.3s ease;
+    }
+    &:hover {
+      &.menu__list:before {
+        width: 100%;
+      }
+    }
+  }
+  &__link {
+    font-size: 16px;
+  }
+}
+.reviewing {
+  &__item {
+    display: flex;
+    &:last-child {
+      border-right: 1px solid rgb(220, 220, 220);
+      border-left: 1px solid rgb(220, 220, 220);
+    }
+  }
+  &__list {
+    position: relative;
+    margin: 21px 40px;
+    border-bottom: 2px solid transparent;
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 0;
+      background: var(--border-bottom);
+      height: 2px;
+      transition: 0.3s ease;
+    }
+    &:hover {
+      &.reviewing__list:before {
+        width: 100%;
+      }
     }
   }
 
-  .burger-toggle__line {
-    width: 100%;
-    height: 2px;
-    background-color: #fff;
-    transition: transform 0.3s ease;
+  &__link {
+    font-size: 16px;
   }
-
-  .burger-toggle.is-active .burger-toggle__line:nth-child(1) {
-    transform: translateY(6px) rotate(45deg);
-  }
-
-  .burger-toggle.is-active .burger-toggle__line:nth-child(2) {
-    opacity: 0;
-  }
-
-  .burger-toggle.is-active .burger-toggle__line:nth-child(3) {
-    transform: translateY(-7px) rotate(-45deg);
-  }
+}
+.border {
+  position: absolute;
+  top: 276px;
+  border-bottom: 1px solid;
+  width: 100%;
+}
 </style>
