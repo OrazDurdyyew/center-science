@@ -25,23 +25,27 @@
               <nuxt-link class="menu__item-link" to="/">Главная</nuxt-link>
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/">О Журнале</nuxt-link>
+              <nuxt-link class="menu__item-link" to="/journal"
+                >О Журнале</nuxt-link
+              >
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/">Свежий Номер</nuxt-link>
+              <nuxt-link class="menu__item-link" to="/latest-number"
+                >Свежий Номер</nuxt-link
+              >
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/">Архив</nuxt-link>
+              <nuxt-link class="menu__item-link" to="/archive">Архив</nuxt-link>
             </li>
           </ul>
           <ul class="menu__item">
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/"
+              <nuxt-link class="menu__item-link" to="/rule-authors"
                 >Правило для авторов</nuxt-link
               >
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/">
+              <nuxt-link class="menu__item-link" to="/reviewing">
                 Рецензирование</nuxt-link
               >
             </li>

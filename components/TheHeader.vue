@@ -37,26 +37,38 @@
         <nav class="header__menu">
           <ul class="menu__item">
             <li class="menu__list">
-              <nuxt-link class="menu__link" to="/">Главная</nuxt-link>
+              <nuxt-link exact class="menu__link" to="/">
+                <p class="menu__link-item">Главная</p>
+              </nuxt-link>
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__link" to="/journal">О Журнале</nuxt-link>
+              <nuxt-link class="menu__link" to="/journal">
+                <p class="menu__link-item">О Журнале</p>
+              </nuxt-link>
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__link" to="/">Свежий Номер</nuxt-link>
+              <nuxt-link class="menu__link" to="/latest-number">
+                <p class="menu__link-item">Свежий Номер</p>
+              </nuxt-link>
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__link" to="/">Архив</nuxt-link>
+              <nuxt-link class="menu__link" to="/archive">
+                <p class="menu__link-item">Архив</p>
+              </nuxt-link>
             </li>
           </ul>
         </nav>
         <nav class="header__reviewing">
           <ul class="reviewing__item">
             <li class="reviewing__list">
-              <nuxt-link class="reviewing__link" to="/">Главная</nuxt-link>
+              <nuxt-link class="reviewing__link" to="/rule-authors">
+                <p class="menu__link-item">Правило для авторов</p>
+              </nuxt-link>
             </li>
             <li class="reviewing__list">
-              <nuxt-link class="reviewing__link" to="/">О Журнале</nuxt-link>
+              <nuxt-link class="reviewing__link" to="/reviewing">
+                <p class="menu__link-item">Рецензирование</p>
+              </nuxt-link>
             </li>
           </ul>
         </nav>
@@ -201,26 +213,32 @@
     }
   }
   &__list {
-    position: relative;
     margin: 21px 40px;
-    border-bottom: 2px solid transparent;
-    &::before {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      width: 0;
-      background: var(--border-bottom);
-      height: 2px;
-      transition: 0.3s ease;
-    }
-    &:hover {
-      &.menu__list:before {
-        width: 100%;
-      }
-    }
   }
   &__link {
     font-size: 16px;
+    position: relative;
+    &-item {
+      &:before {
+        content: "";
+        position: absolute;
+        bottom: -2px;
+        width: 0;
+        background: var(--border-bottom);
+        height: 2px;
+        transition: 0.3s ease;
+      }
+      &:hover {
+        &::before {
+          width: 100%;
+        }
+      }
+    }
+    &.nuxt-link-active {
+      .menu__link-item:before {
+        width: 100%;
+      }
+    }
   }
 }
 .reviewing {
