@@ -3,7 +3,7 @@
     <div class="admin-login__wrapper">
       <div class="admin-login__body">
         <div class="admin-login__body--title">
-          <h2>ВСЕМИРНЫЙ УЧЕНЫЙ</h2>
+          <h2>ЦЕНТЕР НАУКИ</h2>
         </div>
         <form class="admin-login__body--form" @submit.enter.prevent="logIn">
           <div class="admin-login__body--logo">
@@ -42,108 +42,108 @@
 </template>
 
 <script>
-  export default {
-    layout: 'empty',
-    data() {
-      return {
-        error: false,
-        isPass: false,
-        userData: {
-          name: '',
-          password: ''
+export default {
+  layout: "empty",
+  data() {
+    return {
+      error: false,
+      isPass: false,
+      userData: {
+        name: "",
+        password: "",
+      },
+    };
+  },
+  methods: {
+    async logIn() {
+      if (!this.userData.name || !this.userData.password) {
+        this.error = false;
+        setTimeout(() => {
+          this.error = true;
+        }, 0);
+      } else {
+        try {
+          const { data, status } = await this.$auth.loginWith("local", {
+            data: {
+              login: this.userData.name,
+              password: this.userData.password,
+            },
+          });
+          if (status) {
+            localStorage?.setItem("Authorization", data.data.token);
+            this.$cookie.set("Authorization", data.data.token);
+            this.$router.push("/admin");
+          } else {
+            alert(data.message);
+          }
+        } catch (err) {
+          console.log(err);
         }
       }
     },
-    methods: {
-      async logIn() {
-        if (!this.userData.name || !this.userData.password) {
-          this.error = false
-          setTimeout(() => {
-            this.error = true
-          }, 0)
-        } else {
-          try {
-            const { data, status } = await this.$auth.loginWith('local', {
-              data: {
-                login: this.userData.name,
-                password: this.userData.password
-              }
-            })
-            if (status) {
-              localStorage?.setItem('Authorization', data.data.token)
-              this.$cookie.set('Authorization', data.data.token)
-              this.$router.push('/admin')
-            } else {
-              alert(data.message)
-            }
-          } catch (err) {
-            console.log(err)
-          }
-        }
-      }
-    }
-  }
+  },
+};
 </script>
 
 <style lang="scss" scoped>
-  .admin-login {
-    height: 100vh;
-    width: 100vw;
-    overflow: hidden;
-    background: var(--background);
-    &__wrapper {
+.admin-login {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: var(--background);
+  &__wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+  }
+  &__body {
+    width: 420px;
+
+    &--title {
+      font-weight: 600;
+      font-size: 40px;
+      line-height: 48px;
+      text-align: center;
+      color: var(--blue-dark);
+      margin-bottom: 30px;
+    }
+    &--form {
+      background: var(--white);
+      border: 1px solid rgba(0, 0, 0, 0.5);
+      border-radius: 10px;
+      padding: 40px;
+    }
+    &--logo {
+      width: 340px;
+      height: 66px;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    &--img {
       width: 100%;
-      height: 100%;
+      height: 32.3px;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow-y: auto;
-    }
-    &__body {
-      width: 420px;
-
-      &--title {
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 48px;
-        text-align: center;
-        color: var(--primary);
-        margin-bottom: 30px;
-      }
-      &--form {
-        background: var(--white);
-        border: 1px solid rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        padding: 40px;
-      }
-      &--logo {
-        width: 340px;
-        height: 66px;
-        img {
-          width: 100%;
-          height: 100%;
-        }
-      }
-      &--img {
-        width: 100%;
-        height: 32.3px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-        img {
-          width: 345px;
-          height: 100%;
-        }
+      margin-top: 30px;
+      img {
+        width: 345px;
+        height: 100%;
       }
     }
   }
+}
 
-  .login__btn {
-    width: 100%;
-    padding: 10px;
-    background: var(--primary);
-    color: var(--white);
-    font-size: 14px;
-  }
+.login__btn {
+  width: 100%;
+  padding: 10px;
+  background: var(--blue-dark);
+  color: var(--white);
+  font-size: 14px;
+}
 </style>

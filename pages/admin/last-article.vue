@@ -107,7 +107,7 @@
     }
     &__button {
       padding: 10px;
-      background: var(--primary);
+      background: var(--blue-dark);
       border-radius: 6px;
       button {
         color: var(--white);
@@ -124,7 +124,7 @@
         table {
           width: 100%;
           thead {
-            background: var(--primary);
+            background: var(--blue-dark);
             position: sticky;
             top: 0px;
             tr {
@@ -164,7 +164,7 @@
     height: 2px;
   }
   .admin-journal__body-table::-webkit-scrollbar-thumb {
-    background: var(--primary);
+    background: var(--blue-dark);
     border-radius: 10px;
     height: 2px;
   }
