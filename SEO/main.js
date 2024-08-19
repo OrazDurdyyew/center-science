@@ -41,11 +41,11 @@ export default {
     { name: 'apple-mobile-web-app-capable', content: 'yes' }
   ],
   link: [
-    { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
+    { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
     {
       rel: 'shortcut icon',
       type: 'image/x-icon',
-      href: `${process.env.SITE_URL}/favicon.png`
+      href: `${process.env.SITE_URL}/favicon.ico`
     },
 
     {
