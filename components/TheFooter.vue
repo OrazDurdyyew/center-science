@@ -4,20 +4,10 @@
   <footer class="footer">
     <div class="footer__container">
       <div class="footer__body">
-        <div class="footer__copyright">
-          <div class="footer__copyright-item">
-            <p>Публичная оферта</p>
-            <p>Политика конфиденциальности</p>
-          </div>
-          <div class="footer__copyright-item-border">
-            © 2024 Все права защищены.
-          </div>
-        </div>
         <div class="footer__menu">
           <div class="menu__item">
-            <p>Научное издательство «Всемирный ученый»</p>
-            <p>Международный научный журнал «Всемирный ученый»</p>
-            <p>Ул. Козлова 2, Минск. 220034, Беларусь</p>
+            <p>Международный научный журнал «Центр науки»</p>
+            <p>Ул. Довженко 6, Москва, 119590, Россия.</p>
             <p>Электронная почта: redactor@wsemiruch.online</p>
           </div>
           <ul class="menu__item">
@@ -62,6 +52,15 @@
             </li>
           </ul>
         </div>
+        <div class="footer__copyright">
+          <div class="footer__copyright-item">
+            <p>Публичная оферта</p>
+            <p>Политика конфиденциальности</p>
+          </div>
+          <div class="footer__copyright-item-border">
+            © 2024 Все права защищены.
+          </div>
+        </div>
       </div>
     </div>
   </footer>
@@ -71,14 +70,12 @@
 .footer {
   margin-top: 32px;
   background: var(--primary);
-  &__body {
-    padding: 4.55rem 0 5.45rem;
-  }
   &__copyright {
     display: flex;
+    padding: 40px 0px;
   }
   &__menu {
-    margin-top: 80px;
+    padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;

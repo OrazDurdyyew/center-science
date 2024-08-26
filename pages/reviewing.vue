@@ -13,149 +13,437 @@
           </div>
         </div>
         <div class="reviewing__description">
-          <p>
-            <strong>
-              <span>Рецензирование</span>
-            </strong>
-            <span>
-              это процедура рассмотрения научных статей для того, чтобы
-              удостовериться в точности и достоверности изложения и в
-              необходимых случаях добиться от автора следования стандартам,
-              установленным в конкретной области или науке в целом.</span
-            >
-          </p>
-          <br />
-          <p>
-            Настоящий порядок рецензирования рукописей, представляемых с целью
-            публикации устанавливает порядок рецензирования рукописей научных
-            статей, представляемых авторами для публикации. Все научные статьи,
-            поступившие в издательство, подвергаются обязательному анонимному
-            рецензированию.
-          </p>
-          <br />
-          <p>
-            Рецензирование статей осуществляется членами редакционного совета и
-            редакционной коллегии, а также приглашенными рецензентами – ведущими
-            экспертами, обладающими необходимым опытом научной работы по
-            заявленному в статье научному направлению, знакомые с требованиями,
-            предъявляемыми редакцией журнала к публикуемым материалам в
-            соответствующей отрасли. Заключение о выборе рецензента для
-            проведения экспертизы статьи принимает главный редактор, заместитель
-            главного редактора, ответственный секретарь.
-          </p>
-          <br />
-          <p style="background-color: rgb(223, 242, 254)">
-            Ключевая цель рецензентов, как и всего процесса рецензирования,
-            состоит не только в экспертной оценке качества работы, но и в
-            улучшении этого качества
-          </p>
-          <br />
-          <p>
-            Рецензия должна беспристрастно оценивать научную статью, содержать
-            аргументированный всесторонний анализ ее научных и методических
-            достоинств и недостатков. Рецензирование рукописи должно проходить в
-            обстановке конфиденциальности. Рецензенты уведомляются о том, что
-            присланные им рукописи являются интеллектуальной собственностью
-            авторов и относятся к данным, не подлежащим разглашению. Нарушение
-            конфиденциальности может быть только в случае заявления рецензента о
-            недостоверности или фальсификации материалов, описанных в статье
-          </p>
-          <br />
-          <p>При оценке статьи рецензент учитывает:</p>
-          <br />
-          <ul>
-            <li>
-              соответствие тематике научно-практической конференции или журнала,
-              научную новизну и значимость представленных результатов
-            </li>
-            <li>правильность применения результатов других авторов</li>
-            <li>точность ссылок</li>
-            <li>качество изложения и оформления</li>
-          </ul>
-          <br />
-          <p>
-            По итогам рассмотрения рукописи рецензент дает рекомендации о
-            дальнейшей судьбе статьи (каждое решение рецензента обосновывается):
-          </p>
-          <br />
-          <ul>
-            <li>статья рекомендуется к публикации в настоящем виде</li>
-            <li>
-              статья может быть рекомендована к публикации после исправления
-              отмеченных недостатков
-            </li>
-            <li>
-              статья нуждается в дополнительном рецензировании другим
-              специалистом
-            </li>
-            <li>статья не может быть опубликована</li>
-          </ul>
-          <br />
-          <p>
-            Редакция по электронной почте сообщает автору итоги рецензирования.
-          </p>
-          <br />
-          <p>
-            Рекомендации по доработке статьи редакция направляет автору
-            рукописи. Доработка статьи не должна занимать более двух месяцев с
-            момента отправки электронного сообщения о необходимости внесения
-            изменений. Доработанная автором статья повторно направляется на
-            рецензирование. Статьи, доработанные автором, повторно направляются
-            на рецензирование тому же рецензенту, который делал критические
-            замечания, или другому по усмотрению редакции.
-          </p>
-          <br />
-          <p>
-            Рекомендации по доработке статьи редакция направляет автору
-            рукописи. Доработка статьи не должна занимать более двух месяцев с
-            момента отправки электронного сообщения о необходимости внесения
-            изменений. Доработанная автором статья повторно направляется на
-            рецензирование. Статьи, доработанные автором, повторно направляются
-            на рецензирование тому же рецензенту, который делал критические
-            замечания, или другому по усмотрению редакции.
-          </p>
-          <br />
-          <p>
-            При незначительных замечаниях, требующих только редакторских правок,
-            и с согласия авторов, может быть принято решение о приеме статьи для
-            опубликования. В случае отказа дорабатывать статью авторы должны в
-            письменной или устной форме уведомить о своем решении редакцию. Если
-            авторы не возвращают доработанный вариант по истечении трех месяцев
-            со дня отправки рецензии, даже при отсутствии сведений от авторов с
-            отказом от доработки статьи, редакция снимает ее с учета.
-          </p>
-          <br />
-          <p>
-            В случае возникновения неразрешимых противоречий между автором и
-            рецензентами касательно оценки рукописи редколлегия вправе направить
-            рукопись на дополнительное рецензирование. В конфликтных ситуациях
-            решение принимает главный редактор на заседании редакционной
-            коллегии.
-          </p>
-          <br />
-          <p>
-            Решение об отказе в публикации рукописи принимается на заседании
-            редакционной коллегии в соответствии с рекомендациями рецензентов.
-            Статья, не рекомендованная решением редакционной коллегии к
-            публикации, к повторному рассмотрению не принимается. Сообщение об
-            отказе в публикации направляется автору по электронной почте.
-          </p>
-          <br />
-          <p>
-            Наличие положительной рецензии не является достаточным основанием
-            для публикации статьи. Окончательное решение о публикации
-            принимается редакционной коллегией. В конфликтных ситуациях решение
-            принимает главный редактор.
-          </p>
-          <br />
           <p
             style="
-              background-color: rgb(255, 240, 239);
-              color: rgb(216, 46, 33);
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
             "
           >
-            Редакция не вступает в дискуссии с авторами по поводу отклоненных
-            работ.
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Процедура рецензирования представляет собой важный этап оценки
+              научных статей, целью которого является обеспечение точности и
+              достоверности представленных материалов, а также, при
+              необходимости, приведение их в соответствие с установленными
+              стандартами конкретной научной области или науки в целом.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Настоящий регламент рецензирования рукописей, поданных для
+              публикации, определяет порядок их рассмотрения. Все научные
+              статьи, поступающие в редакцию, проходят обязательное анонимное
+              рецензирование.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Рецензирование осуществляется членами редакционного совета и
+              редакционной коллегии, а также приглашёнными рецензентами &ndash;
+              ведущими специалистами с необходимым опытом научной работы в
+              соответствующей области. Главный редактор, заместитель главного
+              редактора или ответственный секретарь принимают окончательное
+              решение о назначении рецензента для экспертной оценки
+              статьи.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Ключевая задача рецензентов, как и всего процесса рецензирования,
+              заключается не только в проведении экспертной оценки качества
+              работы, но и в содействии его улучшению.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Рецензия должна содержать объективный, аргументированный и
+              всесторонний анализ научных и методических достоинств и
+              недостатков статьи. Процесс рецензирования должен проходить в
+              условиях конфиденциальности. Рецензенты уведомляются о том, что
+              предоставленные им рукописи являются интеллектуальной
+              собственностью авторов и не подлежат разглашению. Нарушение
+              конфиденциальности допускается только в случае обнаружения
+              рецензентом недостоверности или фальсификации материалов,
+              изложенных в статье.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >При оценке статьи рецензент учитывает следующие аспекты:</span
+            >
+          </p>
+          <ul type="disc" style="margin-bottom: 0cm">
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >соответствие тематике научно-практической конференции или
+                журнала;</span
+              >
+            </li>
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >научную новизну и значимость представленных результатов;</span
+              >
+            </li>
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >корректность использования результатов других авторов;</span
+              >
+            </li>
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >точность ссылок;</span
+              >
+            </li>
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >качество изложения и оформления.</span
+              >
+            </li>
+          </ul>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >По итогам рецензирования рецензент выносит рекомендации
+              относительно дальнейшей судьбы статьи, обосновывая каждое свое
+              решение:</span
+            >
+          </p>
+          <ul type="disc" style="margin-bottom: 0cm">
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >статья рекомендуется к публикации в представленном виде;</span
+              >
+            </li>
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >статья может быть рекомендована к публикации после устранения
+                указанных недостатков;</span
+              >
+            </li>
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >статья требует дополнительного рецензирования другим
+                специалистом;</span
+              >
+            </li>
+            <li
+              style="
+                margin-top: 0cm;
+                margin-right: 0cm;
+                margin-bottom: 8pt;
+                margin-left: 0cm;
+                font-size: 11pt;
+                font-family: 'Calibri', sans-serif;
+                text-align: justify;
+                line-height: normal;
+              "
+            >
+              <span
+                style="font-size: 16px; font-family: 'Times New Roman', serif"
+                >статья не может быть опубликована.</span
+              >
+            </li>
+          </ul>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Редакция информирует автора о результатах рецензирования по
+              электронной почте. В случае необходимости доработки статьи
+              редакция направляет автору соответствующие рекомендации. Процесс
+              доработки не должен превышать двух месяцев с момента получения
+              автором уведомления о необходимости внесения изменений.
+              Доработанная статья повторно направляется на рецензирование.
+              Статья может быть отправлена на повторное рецензирование как тому
+              же рецензенту, который делал критические замечания, так и другому,
+              по усмотрению редакции.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Если замечания рецензента носят незначительный характер и требуют
+              только редакторских правок, редакция может принять решение о
+              публикации статьи при согласии автора. В случае отказа автора от
+              доработки статьи он обязан письменно или устно уведомить об этом
+              редакцию. Если автор не возвращает доработанную статью в течение
+              трёх месяцев со дня отправки рецензии и не сообщает об отказе от
+              доработки, редакция снимает статью с учёта.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >В случае возникновения неразрешимых разногласий между автором и
+              рецензентами редакционная коллегия вправе направить рукопись на
+              дополнительное рецензирование. В конфликтных ситуациях решение
+              принимает главный редактор на заседании редакционной
+              коллегии.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Решение об отказе в публикации статьи принимается на заседании
+              редакционной коллегии на основании рекомендаций рецензентов.
+              Статьи, отклоненные решением редакционной коллегии, не подлежат
+              повторному рассмотрению. Сообщение об отказе в публикации
+              направляется автору по электронной почте.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Наличие положительной рецензии не гарантирует публикацию статьи.
+              Окончательное решение о публикации принимает редакционная
+              коллегия. В конфликтных ситуациях окончательное решение также
+              принимает главный редактор.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+              line-height: normal;
+            "
+          >
+            <span style="font-size: 16px; font-family: 'Times New Roman', serif"
+              >Редакция не вступает в обсуждения с авторами по поводу
+              отклоненных работ.</span
+            >
+          </p>
+          <p
+            style="
+              margin-top: 0cm;
+              margin-right: 0cm;
+              margin-bottom: 8pt;
+              margin-left: 0cm;
+              font-size: 11pt;
+              font-family: 'Calibri', sans-serif;
+              text-align: justify;
+            "
+          >
+            &nbsp;
           </p>
         </div>
       </div>
@@ -173,24 +461,24 @@
   &__description {
     margin-top: 20px;
     padding: 20px;
-    p {
-      font-size: 18px;
-      line-height: 140%;
-      margin-bottom: 10px;
-      text-align: justify;
-      text-indent: 15px;
-    }
-    ul {
-      padding: 0 40px;
+    // p {
+    //   font-size: 18px;
+    //   line-height: 140%;
+    //   margin-bottom: 10px;
+    //   text-align: justify;
+    //   text-indent: 15px;
+    // }
+    // ul {
+    //   padding: 0 40px;
 
-      li {
-        list-style: disc;
-        font-size: 16px;
-        line-height: 160%;
-        margin-bottom: 20px;
-        position: relative;
-      }
-    }
+    //   li {
+    //     list-style: disc;
+    //     font-size: 16px;
+    //     line-height: 160%;
+    //     margin-bottom: 20px;
+    //     position: relative;
+    //   }
+    // }
   }
 }
 .breadcrumb {
