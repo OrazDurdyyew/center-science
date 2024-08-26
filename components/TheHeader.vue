@@ -326,6 +326,12 @@
   display: flex;
   align-items: center;
   gap: 3px;
+  &:hover {
+    img {
+      transition: 0.3s ease;
+      transform: rotate(3.142rad);
+    }
+  }
 }
 
 .reviewing__link {
