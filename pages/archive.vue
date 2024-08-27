@@ -16,9 +16,7 @@
             <div class="archive__box-file">
               <div class="archive__box-item" v-for="item in 22" :key="item">
                 <div class="archive__box-img">
-                  <img
-                    src="http://10.192.6.6:3000/_nuxt/assets/img/oblozka.png"
-                  />
+                  <img src="@/assets/img/oblozka.png" />
                 </div>
                 <div class="archive__box-names">
                   <p style="margin-top: 20px; font-size: 24px">
@@ -37,10 +35,7 @@
             <div class="archive__box-file">
               <div class="archive__box-item" v-for="item in 12" :key="item">
                 <div class="archive__box-img">
-                  <img
-                    src="http://10.192.6.6:3000/_nuxt/assets/img/oblozka.png"
-                    alt=""
-                  />
+                  <img src="http://10.192.6.6:3000/_nuxt/assets/img/oblozka.png" alt="" />
                 </div>
                 <div class="archive__box-names">
                   <p style="margin-top: 20px; font-size: 24px">
@@ -61,89 +56,89 @@
 </template>
 
 <style scoped lang="scss">
-.archive {
-  &__breadcrumb {
-    margin: 10px 0;
-    padding: 10px;
-  }
-  &__box {
-  }
-  &__wrapper {
-    border-bottom: 1px solid #ccc;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-  }
-  &__box-title {
-    color: #064fa2;
-    font-size: 36px;
-    font-weight: 400;
-    margin-bottom: 20px;
-    padding: 10px;
-  }
+  .archive {
+    &__breadcrumb {
+      margin: 10px 0;
+      padding: 10px;
+    }
+    &__box {
+    }
+    &__wrapper {
+      border-bottom: 1px solid #ccc;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+    }
+    &__box-title {
+      color: #064fa2;
+      font-size: 36px;
+      font-weight: 400;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
 
-  &__box-file {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    // display: flex;
-    // flex-wrap: wrap;
-    gap: 40px;
-    padding: 0 10px;
-  }
+    &__box-file {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      // display: flex;
+      // flex-wrap: wrap;
+      gap: 40px;
+      padding: 0 10px;
+    }
 
-  &__box-item {
-    display: flex;
-    position: relative;
-    background: var(--primary);
-    max-width: 90%;
-    height: 200px;
-
-    margin-top: 50px;
-  }
-
-  &__relatiw {
-  }
-
-  &__box-img {
-    width: 150px;
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      margin-top: -20px;
+    &__box-item {
+      display: flex;
+      position: relative;
+      background: var(--primary);
+      max-width: 90%;
       height: 200px;
-      width: 150px;
-    }
-  }
 
-  &__box-names {
-    p {
-      color: var(--black);
-      font-size: 20px;
-      margin: 0px 20px;
+      margin-top: 50px;
     }
-  }
-}
-.breadcrumb {
-  &__wrapper {
-    display: flex;
-    align-items: center;
-  }
-}
-.menu {
-  &__link {
-    font-style: italic;
-    margin-right: 15px;
-    position: relative;
-    &:first-child {
-      &::after {
-        content: "/";
+
+    &__relatiw {
+    }
+
+    &__box-img {
+      width: 150px;
+      img {
         position: absolute;
-        right: -10px;
+        top: 0;
+        left: 0;
+        margin-top: -20px;
+        height: 200px;
+        width: 150px;
       }
     }
-    &:last-child {
-      color: #b2b2b2;
+
+    &__box-names {
+      p {
+        color: var(--black);
+        font-size: 20px;
+        margin: 0px 20px;
+      }
     }
   }
-}
+  .breadcrumb {
+    &__wrapper {
+      display: flex;
+      align-items: center;
+    }
+  }
+  .menu {
+    &__link {
+      font-style: italic;
+      margin-right: 15px;
+      position: relative;
+      &:first-child {
+        &::after {
+          content: '/';
+          position: absolute;
+          right: -10px;
+        }
+      }
+      &:last-child {
+        color: #b2b2b2;
+      }
+    }
+  }
 </style>
