@@ -22,8 +22,9 @@
             <div class="factor">
               <button>
                 <p style="font-size: 14px; text-align: center">
-                  Международный научный <br />
-                  журнал
+                  Международный
+                  <br />
+                  научный журнал
                 </p>
               </button>
             </div>
@@ -63,21 +64,35 @@
               <nuxt-link class="reviewing__link" to="/rule-authors">
                 <div class="menu-main-link">
                   <p class="menu__link-item">Правило для авторов</p>
-                  <img src="../assets/icons/caret-up.svg" alt="" />
+                  <img
+                    class="menu__link-arrow"
+                    src="../assets/icons/arrow-bottom.svg"
+                    alt=""
+                  />
                 </div>
-                <div class="menu__link-accordion">
-                  <nuxt-link class="acardion-item" to="/reviewing"
-                    >Рецензирование</nuxt-link
-                  >
-                  <nuxt-link class="acardion-item" to="/publication"
-                    >Этика публикаций</nuxt-link
-                  >
-                  <nuxt-link class="acardion-item" to="/">Оплата</nuxt-link>
+                <div class="menu__accordion">
+                  <ul class="menu__accordion-item">
+                    <li class="menu__accordion-list">
+                      <nuxt-link class="menu__acardion-link" to="/reviewing"
+                        >Рецензирование</nuxt-link
+                      >
+                    </li>
+                    <li class="menu__accordion-list">
+                      <nuxt-link class="menu__acardion-link" to="/publication"
+                        >Этика публикаций</nuxt-link
+                      >
+                    </li>
+                    <li class="menu__accordion-list">
+                      <nuxt-link class="menu__acardion-link" to="/"
+                        >Оплата</nuxt-link
+                      >
+                    </li>
+                  </ul>
                 </div>
               </nuxt-link>
             </li>
             <li class="reviewing__list">
-              <nuxt-link class="reviewing__link" to="/reviewing">
+              <nuxt-link class="reviewing__link" to="/contact">
                 <p class="menu__link-item">Контакт</p>
               </nuxt-link>
             </li>
@@ -202,7 +217,7 @@
       content: "";
       position: absolute;
       top: -20px;
-      right: 199px;
+      right: 140px;
       height: 60px;
       width: 0.5px;
       background: var(--white);
@@ -244,13 +259,12 @@
   }
   &__link {
     font-size: 16px;
-    &-accordion {
-      display: none;
-      padding: 10px 40px 10px 0px;
-      flex-direction: column;
-      gap: 10px;
-    }
   }
+  &__accordion {
+    display: none;
+    transition: 0.3s ease;
+  }
+
   // &__link {
   //   font-size: 16px;
   //   position: relative;
@@ -280,6 +294,7 @@
 .reviewing {
   &__item {
     display: flex;
+    align-items: center;
     &:last-child {
       border-right: 1px solid rgb(220, 220, 220);
       border-left: 1px solid rgb(220, 220, 220);
@@ -307,13 +322,6 @@
 
   &__link {
     font-size: 16px;
-
-    &:hover {
-      background-color: red;
-      &-accordion {
-        display: none;
-      }
-    }
   }
 }
 .border {
@@ -326,27 +334,50 @@
   display: flex;
   align-items: center;
   gap: 3px;
-  &:hover {
-    img {
-      transition: 0.3s ease;
-      transform: rotate(3.142rad);
-    }
-  }
 }
 
-.reviewing__link {
+.reviewing__list {
   &:hover {
-    .menu__link-accordion {
-      display: flex;
-      position: absolute;
-      background: var(--white);
-      box-shadow: 1px 1px 10px #aaa;
-      border-radius: 8px;
-      padding-left: 4px;
-      width: 100%;
+    .menu {
+      &__accordion {
+        display: flex;
+        position: absolute;
+        background: var(--white);
+        border: 1px solid #c7c3c3;
+        width: 100%;
+        transition: 0.3s ease;
+      }
+      &__accordion-item {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        gap: 10px;
+      }
+      &__accordion-list {
+        position: relative;
+        padding: 6.4px 9.6px;
+        border-bottom: 2px solid transparent;
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          width: 0;
+          background: var(--border-bottom);
+          height: 2px;
+          transition: 0.3s ease;
+        }
+        &:hover {
+          &::before {
+            width: 100%;
+          }
+        }
+      }
+      &__accordion-link {
+      }
+    }
+    .menu__link-arrow {
+      transform: rotate(180deg);
     }
   }
-}
-.acardion-item {
 }
 </style>

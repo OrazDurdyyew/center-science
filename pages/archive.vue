@@ -21,7 +21,15 @@
                     alt=""
                   />
                 </div>
-                <div class="archive__box-name">Выпуск №33, Том 1</div>
+                <div class="archive__box-names">
+                  <p style="margin-top: 20px; font-size: 24px">
+                    <b>Выпуск №33</b>
+                  </p>
+                  <br />
+                  <br />
+                  <br />
+                  <p><i>Том 1</i></p>
+                </div>
               </div>
             </div>
           </div>
@@ -35,7 +43,15 @@
                     alt=""
                   />
                 </div>
-                <div class="archive__box-name">Выпуск №33, Том 1</div>
+                <div class="archive__box-names">
+                  <p style="margin-top: 20px; font-size: 24px">
+                    <b>Выпуск №33</b>
+                  </p>
+                  <br />
+                  <br />
+                  <br />
+                  <p><i>Том 1</i></p>
+                </div>
               </div>
             </div>
           </div>
@@ -67,31 +83,36 @@
   }
 
   &__box-file {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    // display: flex;
+    // flex-wrap: wrap;
     gap: 40px;
     padding: 0 10px;
   }
 
   &__box-item {
-    cursor: pointer;
+    display: flex;
+    background: var(--primary);
+    max-width: 90%;
+    margin-top: 50px;
   }
 
   &__box-img {
     width: 150px;
     img {
+      margin-top: -20px;
       height: 100%;
       width: 100%;
     }
   }
 
-  &__box-name {
-    color: #064fa2;
-    font-size: 16px;
-    max-width: 150px;
-    padding: 10px 0;
-    text-align: center;
-    white-space: pre-wrap;
+  &__box-names {
+    p {
+      color: var(--black);
+      font-size: 20px;
+      margin: 0px 20px;
+    }
   }
 }
 .breadcrumb {
