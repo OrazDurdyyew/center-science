@@ -8,7 +8,11 @@
           <div class="menu__item">
             <p>Международный научный журнал «Центр науки»</p>
             <p>Ул. Довженко 6, Москва, 119590, Россия.</p>
-            <p>Электронная почта: redactor@wsemiruch.online</p>
+            <p>
+              Электронная почта:
+              <a href="http:redactor@center-nauki.ru"></a>
+              redactor@center-nauki.ru
+            </p>
           </div>
           <ul class="menu__item">
             <li class="menu__list">

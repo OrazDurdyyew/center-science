@@ -17,8 +17,7 @@
               <div class="archive__box-item" v-for="item in 22" :key="item">
                 <div class="archive__box-img">
                   <img
-                    src="https://wsemiruch.online/_nuxt/img/journal__ru.2eb3943.webp"
-                    alt=""
+                    src="http://10.192.6.6:3000/_nuxt/assets/img/oblozka.png"
                   />
                 </div>
                 <div class="archive__box-names">
@@ -39,7 +38,7 @@
               <div class="archive__box-item" v-for="item in 12" :key="item">
                 <div class="archive__box-img">
                   <img
-                    src="https://wsemiruch.online/_nuxt/img/journal__ru.2eb3943.webp"
+                    src="http://10.192.6.6:3000/_nuxt/assets/img/oblozka.png"
                     alt=""
                   />
                 </div>
@@ -93,17 +92,26 @@
 
   &__box-item {
     display: flex;
+    position: relative;
     background: var(--primary);
     max-width: 90%;
+    height: 200px;
+
     margin-top: 50px;
+  }
+
+  &__relatiw {
   }
 
   &__box-img {
     width: 150px;
     img {
+      position: absolute;
+      top: 0;
+      left: 0;
       margin-top: -20px;
-      height: 100%;
-      width: 100%;
+      height: 200px;
+      width: 150px;
     }
   }
 
