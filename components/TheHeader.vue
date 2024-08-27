@@ -72,7 +72,7 @@
                       <nuxt-link class="menu__acardion-link" to="/reviewing">Рецензирование</nuxt-link>
                     </li>
                     <li class="menu__accordion-list">
-                      <nuxt-link class="menu__acardion-link" to="/publications">Этика публикаций</nuxt-link>
+                      <nuxt-link class="menu__acardion-link" to="/page">Этика публикаций</nuxt-link>
                     </li>
                     <li class="menu__accordion-list">
                       <nuxt-link class="menu__acardion-link" to="/">Оплата</nuxt-link>
