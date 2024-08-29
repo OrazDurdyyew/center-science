@@ -10,9 +10,6 @@
             <nuxt-link class="menu__link" to="/journal">О ЖУРНАЛЕ </nuxt-link>
           </div>
         </div>
-        <div class="about-journal__title">
-          <h2>О ЖУРНАЛЕ</h2>
-        </div>
         <div class="about-journal__box">
           <p style="margin-bottom: 20px">
             Журнал «Центр науки» приглашает научное сообщество, преподавателей
