@@ -1,5 +1,3 @@
-<script setup lang="ts"></script>
-
 <template>
   <div class="archive">
     <div class="archive__container">
@@ -11,40 +9,20 @@
           </div>
         </div>
         <div class="archive__box">
-          <div class="archive__wrapper">
-            <div class="archive__box-title">2024</div>
+          <div v-for="(archive, index) in archives" :key="index" class="archive__wrapper">
+            <div class="archive__box-title">{{ archive.year }}</div>
             <div class="archive__box-file">
-              <div class="archive__box-item" v-for="item in 22" :key="item">
+              <div class="archive__box-item" v-for="magazine in archive.magazines" :key="item">
                 <div class="archive__box-img">
                   <img src="@/assets/img/oblozka.png" />
                 </div>
                 <div class="archive__box-names">
-                  <p style="margin-top: 20px; font-size: 24px">
-                    <b>Выпуск №33</b>
+                  <p style="margin-top: 20px; margin-bottom: 30px; font-size: 24px; font-weight: bold">
+                    {{ magazine.content.slice(0, -7) }}
                   </p>
-                  <br />
-                  <br />
-                  <br />
-                  <p><i>Том 1</i></p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="archive__wrapper">
-            <div class="archive__box-title">2023</div>
-            <div class="archive__box-file">
-              <div class="archive__box-item" v-for="item in 12" :key="item">
-                <div class="archive__box-img">
-                  <img src="http://10.192.6.6:3000/_nuxt/assets/img/oblozka.png" alt="" />
-                </div>
-                <div class="archive__box-names">
-                  <p style="margin-top: 20px; font-size: 24px">
-                    <b>Выпуск №33</b>
+                  <p>
+                    {{ magazine.content.slice(12) }}
                   </p>
-                  <br />
-                  <br />
-                  <br />
-                  <p><i>Том 1</i></p>
                 </div>
               </div>
             </div>
@@ -54,6 +32,32 @@
     </div>
   </div>
 </template>
+
+<script>
+  export default {
+    data() {
+      return {
+        archives: []
+      }
+    },
+    async mounted() {
+      await this.fetchJournal()
+    },
+    methods: {
+      async fetchJournal() {
+        try {
+          const { data, status } = (await this.$axios.post('admin/get-archive')).data
+          if (status) {
+            this.archives = data
+            console.log(data)
+          }
+        } catch (error) {
+          console.log(error)
+        }
+      }
+    }
+  }
+</script>
 
 <style scoped lang="scss">
   .archive {
