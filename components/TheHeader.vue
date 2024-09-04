@@ -80,7 +80,7 @@
                     <nuxt-link class="menu__acardion-link" to="/page">Этика публикаций</nuxt-link>
                   </li>
                   <li class="menu__accordion-list">
-                    <nuxt-link class="menu__acardion-link" to="/">Оплата</nuxt-link>
+                    <nuxt-link class="menu__acardion-link" to="/payment">Оплата</nuxt-link>
                   </li>
                 </ul>
               </div>
