@@ -14,7 +14,9 @@
           <p>
             <strong>
               <span>Образец статьи – </span>
-              <span style="text-decoration: underline">СКАЧАТЬ!</span>
+              <span style="text-decoration: underline">
+                <a href="standart.docx" download="">СКАЧАТЬ!</a>
+              </span>
             </strong>
           </p>
           <p style="margin-bottom: 40px">
