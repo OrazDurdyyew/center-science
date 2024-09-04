@@ -87,7 +87,7 @@
             </li>
             <li class="reviewing__list">
               <nuxt-link class="reviewing__link" to="/contact">
-                <p class="menu__link-item">Контакт</p>
+                <p class="menu__link-item">Контакты</p>
               </nuxt-link>
             </li>
           </ul>

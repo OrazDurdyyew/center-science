@@ -1,6 +1,6 @@
 export default {
-  titleTemplate: 'Центер науки',
-  title: 'Центер науки',
+  titleTemplate: 'Центр науки',
+  title: 'Центр науки',
   meta: [
     { charset: 'utf-8' },
     {
@@ -10,7 +10,7 @@ export default {
     {
       hid: 'description',
       name: 'description',
-      content: 'Расширяя горизонты современной науки'
+      content: 'НАУКА, ВЕДУЩАЯ К ПРОГРЕССУ'
     },
 
     {
