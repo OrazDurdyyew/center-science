@@ -439,20 +439,7 @@ body {
   margin-right: 50px;
 }
 
-.send__btn {
-  padding: 10px;
-  background: var(--primary);
-  border-radius: 6px;
-  color: var(--white);
-  margin-right: 10px;
-}
-.reset__btn {
-  padding: 10px;
-  background: var(--error);
-  border-radius: 6px;
-  color: var(--white);
-  margin-right: 10px;
-}
+
 
 ::-webkit-scrollbar-track {
   background: transparent;
@@ -473,3 +460,17 @@ body {
   visibility: hidden;
   opacity: 0px;
 }  */
+.send__btn {
+  padding: 10px;
+  background: var(--primary);
+  border-radius: 6px;
+  color: var(--white);
+  margin-right: 10px;
+}
+.reset__btn {
+  padding: 10px;
+  background: var(--error);
+  border-radius: 6px;
+  color: var(--white);
+  margin-right: 10px;
+}
