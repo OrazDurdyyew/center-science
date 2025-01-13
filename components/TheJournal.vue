@@ -15,7 +15,7 @@
           <p class="journal__description-title">Google Scholar</p>
 
           <p class="journal__description-description">
-            Организационный взнос – <span>200 руб/страница</span> <br />
+            Организационный взнос – <span>800 руб/страница</span> <br />
             Сертификат о публикации – <span>бесплатно</span>
           </p>
           <p class="journal__description-title">Email: redactor@wsemiruch.online</p>

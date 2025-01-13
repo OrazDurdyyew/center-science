@@ -20,7 +20,9 @@
           <p>Ул. Довженко 6, Москва, 119590, Россия.</p>
           <p>
             Электронная почта:
-            <a href="redactor@center-nauki.ru">redactor@center-nauki.ru</a>
+            <a href="mailto:redactor@center-nauki.ru"
+              >redactor@center-nauki.ru</a
+            >
           </p>
         </div>
       </div>
