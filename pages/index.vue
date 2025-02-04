@@ -18,28 +18,16 @@
           </div>
           <div class="home-journal__results">
             <div class="results-journal__item">
-              <img
-                src="https://wsemiruch.online/_nuxt/img/scholar.c62b589.webp"
-                alt=""
-              />
+              <img src="https://wsemiruch.online/_nuxt/img/scholar.c62b589.webp" alt="" />
             </div>
             <div class="results-journal__item">
-              <img
-                src="https://wsemiruch.online/_nuxt/img/elibrary.f9ae970.webp"
-                alt=""
-              />
+              <img src="https://wsemiruch.online/_nuxt/img/elibrary.f9ae970.webp" alt="" />
             </div>
             <div class="results-journal__item">
-              <img
-                src="https://wsemiruch.online/_nuxt/img/cyberleninka.484ba03.webp"
-                alt=""
-              />
+              <img src="https://wsemiruch.online/_nuxt/img/cyberleninka.484ba03.webp" alt="" />
             </div>
             <div class="results-journal__item">
-              <img
-                src="https://wsemiruch.online/_nuxt/img/access.fd894fb.webp"
-                alt=""
-              />
+              <img src="https://wsemiruch.online/_nuxt/img/access.fd894fb.webp" alt="" />
             </div>
           </div>
         </div>
@@ -70,6 +58,14 @@
                 </ol>
               </div>
             </div>
+            <div class="home-articles__box">
+              <p style="font-size: 18px; line-height: 120%;">Журнал выходит 3 раза в месяц - 2-ого, 12-ого и 22-ого
+                числа каждого месяца.
+                Статьи соответственно
+                принимаются за 2 дня до выхода журнала (до 10-ого, 20-ого и 30-ого числа каждого календарного месяца).
+              </p>
+            </div>
+
           </div>
         </div>
       </div>
@@ -83,22 +79,25 @@ export default {};
 
 <style lang="scss" scoped>
 .home {
-  &__body {
-  }
+  &__body {}
 }
+
 .home-journal {
   padding: 32px 0px 2.7rem 0px;
+
   &__about {
     background: var(--primary);
     padding: 40px 102px 30px 102px;
     margin-bottom: 2.7rem;
   }
+
   &__results {
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
 }
+
 .about-journal {
   &__title {
     font-size: 24px;
@@ -113,6 +112,7 @@ export default {};
     }
   }
 }
+
 .results-journal {
   &__item {
     display: flex;
@@ -121,6 +121,7 @@ export default {};
     margin-bottom: 10px;
     position: relative;
     width: 280px;
+
     img {
       left: 0;
       position: absolute;
@@ -135,17 +136,19 @@ export default {};
     color: var(--text);
     line-height: 140%;
   }
+
   &__title {
     margin-bottom: 10px;
+
     span {
       font-size: 32px;
       color: var(--text);
     }
   }
 }
+
 .home-articles {
-  &__body {
-  }
+  &__body {}
 
   &__title {
     font-size: 24px;
@@ -167,11 +170,13 @@ export default {};
     }
   }
 }
+
 .articles-info {
   li {
     font-size: 20px;
     margin-bottom: 7px;
   }
+
   &__border {
     border: 1px solid var(--text);
     background: var(--primary);
