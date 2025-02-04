@@ -29,7 +29,7 @@
                 <div class="articles__border-color"></div>
               </div>
             </div>
-            <div class="articles__item-title">
+            <div @click="$router.push(`/article/${article.uuid}`)" class="articles__item-title">
               <p>{{ article.title }}</p>
             </div>
             <div class="articles__item-authors">

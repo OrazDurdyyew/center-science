@@ -141,6 +141,9 @@ export default {
           <nuxt-link class="burger__menu-link" to="/archive">
             <p>Архив</p>
           </nuxt-link>
+          <nuxt-link class="burger__menu-link" to="/rule-authors">
+            <p>Правило для авторов</p>
+          </nuxt-link>
           <nuxt-link class="burger__menu-link" to="/reviewing">
             <p>Рецензирование</p>
           </nuxt-link>
@@ -565,7 +568,7 @@ export default {
     padding: 20px;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
   }
 
   &-link {

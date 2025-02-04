@@ -17,17 +17,13 @@
           <div class="articles__publication">
             <p>ПУБЛИКАЦИИ</p>
           </div>
-          <div
-            class="articles__item"
-            v-for="(article, index) in articles"
-            :key="index"
-          >
+          <div class="articles__item" v-for="(article, index) in articles" :key="index">
             <div class="articles__border">
               <div class="articles__border-wrapper">
                 <div class="articles__border-color"></div>
               </div>
             </div>
-            <div class="articles__item-title">
+            <div class="articles__item-title" @click="$router.push(`/article/${article.uuid}`)">
               <p>{{ article.title }}</p>
             </div>
             <div class="articles__item-authors">
@@ -108,25 +104,28 @@ export default {
   &__title {
     background: #e6e6e6;
     padding: 10px;
+
     h3 {
       font-size: 14px;
     }
   }
 
-  &__articles {
-  }
+  &__articles {}
 }
+
 .breadcrumb {
   &__wrapper {
     display: flex;
     align-items: center;
   }
 }
+
 .menu {
   &__link {
     font-style: italic;
     margin-right: 15px;
     position: relative;
+
     &:first-child {
       &::after {
         content: "/";
@@ -134,11 +133,13 @@ export default {
         right: -10px;
       }
     }
+
     &:last-child {
       color: #b2b2b2;
     }
   }
 }
+
 .articles {
   &__release {
     padding: 20px 10px;
@@ -161,11 +162,13 @@ export default {
     align-items: center;
     justify-content: space-between;
     color: var(--text);
+
     p {
       font-size: 18px;
       font-weight: 400;
       margin-right: 20px;
     }
+
     span {
       color: #29abe2;
       cursor: pointer;
@@ -173,6 +176,7 @@ export default {
       font-weight: 600;
     }
   }
+
   &__publication {
     margin-bottom: 40px;
 
@@ -190,6 +194,7 @@ export default {
       transition: 0.3s ease;
       border: 1px solid #0272b1;
       cursor: pointer;
+
       &:hover {
         transition: 0.3s ease;
         border-color: #eb6500;
@@ -198,17 +203,20 @@ export default {
       }
     }
   }
+
   &__item {
     position: relative;
     margin-bottom: 10px;
     padding: 10px 10px 20px;
   }
+
   &__border {
     position: absolute;
     top: 13px;
     left: -11px;
     width: 12px;
     height: 12px;
+
     &-wrapper {
       width: 100%;
       height: 100%;
@@ -217,6 +225,7 @@ export default {
       justify-content: center;
       border: 1px solid var(--black);
     }
+
     &-color {
       border: 2px solid var(--white);
       background: #eb6500;
@@ -224,6 +233,7 @@ export default {
       height: 100%;
     }
   }
+
   // &__border-body {
   //   padding: 4px;
   // }
@@ -237,8 +247,10 @@ export default {
     margin-bottom: 20px;
     -webkit-text-decoration: none;
     text-decoration: none;
+
     p {
       position: relative;
+
       &::before {
         content: "";
         position: absolute;
@@ -248,8 +260,10 @@ export default {
         height: 2px;
         transition: 0.3s ease;
       }
+
       &:hover {
         color: var(--text);
+
         &::before {
           width: 100%;
         }
@@ -263,10 +277,17 @@ export default {
     margin-bottom: 15px;
     display: flex;
     cursor: pointer;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+
     p {
       margin-right: 15px;
       color: var(--text);
       position: relative;
+
       &::before {
         content: "";
         width: 0;
@@ -276,6 +297,7 @@ export default {
         transition: 0.3s ease;
         background: var(--black);
       }
+
       &:hover {
         &::before {
           width: 100%;
@@ -290,6 +312,7 @@ export default {
     align-items: center;
     margin-bottom: 15px;
     position: relative;
+
     &::before {
       content: "";
       width: 0;
@@ -299,14 +322,17 @@ export default {
       transition: 0.3s ease;
       background: #eb6500;
     }
+
     &:hover {
       &::before {
         width: 100px;
       }
     }
+
     img {
       margin-right: 7px;
     }
+
     p {
       font-size: 16px;
       font-weight: 600;
@@ -316,6 +342,7 @@ export default {
 
   &__item-data {
     margin-bottom: 5px;
+
     span {
       color: gray;
       font-size: 15px;
@@ -327,11 +354,13 @@ export default {
 
   &__item-annotation {
     margin-bottom: 5px;
+
     h4 {
       color: #29abe2;
       font-size: 16px;
       margin-bottom: 10px;
     }
+
     p {
       font-size: 16px;
       color: var(--text);

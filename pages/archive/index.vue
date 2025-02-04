@@ -12,9 +12,8 @@
           <div v-for="(archive, index) in archives" :key="index" class="archive__wrapper">
             <div class="archive__box-title">{{ archive.year }}</div>
             <div class="archive__box-file">
-              <div class="archive__box-item"
-                v-for="(magazine, index) in archive.magazines.concat(archive.magazines).concat(archive.magazines)"
-                :key="index" @click="goTo(magazine)">
+              <div class="archive__box-item" v-for="(magazine, index) in archive.magazines" :key="index"
+                @click="goTo(magazine)">
                 <div class="archive__box-img">
                   <img src="@/assets/img/oblozka.png" />
                 </div>
