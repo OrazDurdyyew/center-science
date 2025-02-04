@@ -69,6 +69,7 @@
   &__title {
     background: #e6e6e6;
     padding: 10px;
+
     h3 {
       font-size: 14px;
     }
@@ -77,6 +78,12 @@
   &__box {
     margin-top: 20px;
     padding: 20px;
+
+    @media screen and (max-width: 768px) {
+      margin-top: 0px;
+      padding: 0;
+    }
+
     p {
       font-size: 16px;
       line-height: 140%;
@@ -89,6 +96,11 @@
     // display: grid;
     // grid-template-columns: 1fr 1fr 1fr;
     padding: 0 40px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0 20px;
+    }
+
     li {
       font-size: 16px;
       line-height: 100%;
@@ -96,23 +108,27 @@
       list-style: disc;
     }
   }
+
   h3 {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
   }
 }
+
 .breadcrumb {
   &__wrapper {
     display: flex;
     align-items: center;
   }
 }
+
 .menu {
   &__link {
     font-style: italic;
     margin-right: 15px;
     position: relative;
+
     &:first-child {
       &::after {
         content: "/";
@@ -120,6 +136,7 @@
         right: -10px;
       }
     }
+
     &:last-child {
       color: #b2b2b2;
     }

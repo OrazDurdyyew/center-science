@@ -9,36 +9,19 @@
           </div>
         </div>
         <div class="archive__box">
-          <div
-            v-for="(archive, index) in archives"
-            :key="index"
-            class="archive__wrapper"
-          >
+          <div v-for="(archive, index) in archives" :key="index" class="archive__wrapper">
             <div class="archive__box-title">{{ archive.year }}</div>
             <div class="archive__box-file">
-              <div
-                class="archive__box-item"
-                v-for="(magazine, index) in archive.magazines"
-                :key="index"
-                @click="goTo(magazine)"
-              >
+              <div class="archive__box-item"
+                v-for="(magazine, index) in archive.magazines.concat(archive.magazines).concat(archive.magazines)"
+                :key="index" @click="goTo(magazine)">
                 <div class="archive__box-img">
                   <img src="@/assets/img/oblozka.png" />
                 </div>
                 <div class="archive__box-names">
-                  <p
-                    style="
-                      margin-top: 20px;
-                      margin-bottom: 30px;
-                      font-size: 24px;
-                      font-weight: bold;
-                    "
-                  >
+                  <p>
                     {{ magazine.content }}
                   </p>
-                  <!-- <p>
-                    {{ magazine.content.slice(0, 7) }}
-                  </p> -->
                 </div>
               </div>
             </div>
@@ -66,7 +49,6 @@ export default {
           .data;
         if (status) {
           this.archives = data;
-          console.log(data);
         }
       } catch (error) {
         console.log(error);
@@ -86,13 +68,15 @@ export default {
     margin: 10px 0;
     padding: 10px;
   }
-  &__box {
-  }
+
+  &__box {}
+
   &__wrapper {
     border-bottom: 1px solid #ccc;
     margin-bottom: 20px;
     padding-bottom: 20px;
   }
+
   &__box-title {
     color: #064fa2;
     font-size: 36px;
@@ -104,27 +88,36 @@ export default {
   &__box-file {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    // display: flex;
-    // flex-wrap: wrap;
     gap: 40px;
     padding: 0 10px;
+
+    @media screen and (max-width: 923px) {
+      gap: 10px;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__box-item {
     display: flex;
     position: relative;
     background: var(--primary);
-    max-width: 90%;
     height: 200px;
-
+    max-width: 90%;
     margin-top: 50px;
+
+    @media screen and (max-width: 923px) {
+      max-width: 100%;
+    }
   }
 
-  &__relatiw {
-  }
+  &__relatiw {}
 
   &__box-img {
     width: 150px;
+
     img {
       position: absolute;
       top: 0;
@@ -136,24 +129,39 @@ export default {
   }
 
   &__box-names {
+    flex: 1 1;
+
     p {
       color: var(--black);
-      font-size: 20px;
-      margin: 0px 20px;
+      font-size: 24px;
+      padding: 0 10px;
+      margin-top: 20px;
+      margin-bottom: 30px;
+      font-size: 24px;
+      font-weight: bold;
+
+      @media screen and (max-width: 425px) {
+        font-size: 16px !important;
+      }
     }
+
+
   }
 }
+
 .breadcrumb {
   &__wrapper {
     display: flex;
     align-items: center;
   }
 }
+
 .menu {
   &__link {
     font-style: italic;
     margin-right: 15px;
     position: relative;
+
     &:first-child {
       &::after {
         content: "/";
@@ -161,6 +169,7 @@ export default {
         right: -10px;
       }
     }
+
     &:last-child {
       color: #b2b2b2;
     }

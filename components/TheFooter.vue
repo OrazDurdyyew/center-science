@@ -19,14 +19,10 @@
               <nuxt-link class="menu__item-link" to="/">Главная</nuxt-link>
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/journal"
-                >О Журнале</nuxt-link
-              >
+              <nuxt-link class="menu__item-link" to="/journal">О Журнале</nuxt-link>
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/latest-number"
-                >Свежий Номер</nuxt-link
-              >
+              <nuxt-link class="menu__item-link" to="/latest-number">Свежий Номер</nuxt-link>
             </li>
             <li class="menu__list">
               <nuxt-link class="menu__item-link" to="/archive">Архив</nuxt-link>
@@ -34,19 +30,14 @@
           </ul>
           <ul class="menu__item">
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/rule-authors"
-                >Правило для авторов</nuxt-link
-              >
+              <nuxt-link class="menu__item-link" to="/rule-authors">Правило для авторов</nuxt-link>
             </li>
             <li class="menu__list">
               <nuxt-link class="menu__item-link" to="/reviewing">
-                Рецензирование</nuxt-link
-              >
+                Рецензирование</nuxt-link>
             </li>
             <li class="menu__list">
-              <nuxt-link class="menu__item-link" to="/"
-                >Этика публикаций</nuxt-link
-              >
+              <nuxt-link class="menu__item-link" to="/">Этика публикаций</nuxt-link>
             </li>
             <li class="menu__list">
               <nuxt-link class="menu__item-link" to="/">Оплата</nuxt-link>
@@ -74,43 +65,76 @@
 .footer {
   margin-top: 32px;
   background: var(--primary);
+
   &__copyright {
     display: flex;
     padding: 40px 0px;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      padding: 0;
+      gap: 20px;
+    }
   }
+
+
   &__menu {
     padding-top: 80px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
     p {
       margin-bottom: 10px;
     }
   }
+
   &__copyright-item {
     padding-right: 1.8rem;
+
+    @media screen and (max-width: 768px) {
+      padding-right: 0;
+      text-align: center;
+      margin-top: 10px;
+    }
 
     p {
       font-size: 16px;
       color: var(--text);
+
       &:first-child {
         margin-bottom: 7px;
       }
     }
   }
+
   &__copyright-item-border {
     font-size: 16px;
     color: var(--text);
     padding-left: 1.8rem;
     border-left: 1px solid #dcdcdc;
+
+    @media screen and (max-width: 768px) {
+      text-align: center;
+      padding-bottom: 10px;
+      border: none;
+    }
   }
 }
+
 .menu {
   &__item {
     p {
       font-size: 16px;
       color: var(--text);
       position: relative;
+
       &::before {
         content: "";
         position: absolute;
@@ -120,6 +144,7 @@
         width: 0;
         height: 2px;
       }
+
       &:hover {
         &::before {
           width: 100%;
@@ -127,9 +152,11 @@
       }
     }
   }
+
   &__list {
     margin-bottom: 10px;
     position: relative;
+
     &::before {
       content: "";
       position: absolute;
@@ -139,6 +166,7 @@
       width: 0;
       height: 2px;
     }
+
     &:hover {
       &::before {
         width: 100%;
@@ -146,7 +174,6 @@
     }
   }
 
-  &__item-link {
-  }
+  &__item-link {}
 }
 </style>

@@ -7,9 +7,7 @@
         <div class="reviewing__breadcrumb">
           <div class="breadcrumb__wrapper">
             <nuxt-link class="menu__link" to="/">ГЛАВНАЯ</nuxt-link>
-            <nuxt-link class="menu__link" to="/reviewing"
-              >Рецензирование</nuxt-link
-            >
+            <nuxt-link class="menu__link" to="/reviewing">Рецензирование</nuxt-link>
           </div>
         </div>
         <div class="reviewing__description">
@@ -161,12 +159,22 @@
   &__description {
     margin-top: 20px;
     padding: 20px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0px;
+    }
+
     p {
       font-size: 18px;
       line-height: 140%;
       margin-bottom: 10px;
       text-align: justify;
+
+      @media screen and (max-width: 768px) {
+        text-align: start;
+      }
     }
+
     ul {
       padding: 0 40px;
 
@@ -178,17 +186,20 @@
     }
   }
 }
+
 .breadcrumb {
   &__wrapper {
     display: flex;
     align-items: center;
   }
 }
+
 .menu {
   &__link {
     font-style: italic;
     margin-right: 15px;
     position: relative;
+
     &:first-child {
       &::after {
         content: "/";
@@ -196,6 +207,7 @@
         right: -10px;
       }
     }
+
     &:last-child {
       color: #b2b2b2;
     }

@@ -89,12 +89,25 @@ export default {};
     background: var(--primary);
     padding: 40px 102px 30px 102px;
     margin-bottom: 2.7rem;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+      margin-bottom: 10px;
+    }
+
+    @media screen and (max-width: 500px) {
+      padding: 10px;
+    }
   }
 
   &__results {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and (max-width: 560px) {
+      flex-direction: column;
+    }
   }
 }
 
@@ -103,17 +116,26 @@ export default {};
     font-size: 24px;
     margin-bottom: 16px;
     font-weight: 700;
+
+    @media screen and (max-width: 500px) {
+      font-size: 18px;
+    }
   }
 
   &__subtitle {
     p {
       font-size: 20px;
       line-height: 120%;
+
+      @media screen and (max-width: 500px) {
+        font-size: 14px;
+      }
     }
   }
 }
 
 .results-journal {
+
   &__item {
     display: flex;
     align-items: center;
@@ -154,11 +176,15 @@ export default {};
     font-size: 24px;
     font-weight: 700;
     margin-bottom: 24px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 22px;
+    }
   }
 
   &__box {
     border-top: 1px solid var(--black);
-    padding: 24px 0px 26px 0px;
+    padding: 24px 10px 26px 10px;
     border-bottom: 1px solid #dcdcdc;
   }
 
@@ -175,6 +201,10 @@ export default {};
   li {
     font-size: 20px;
     margin-bottom: 7px;
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+    }
   }
 
   &__border {
