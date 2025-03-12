@@ -40,7 +40,7 @@ export default {
             <div class="header__title-p">
               <p style="margin-bottom: 5px">НАУКА, ВЕДУЩАЯ К ПРОГРЕССУ</p>
             </div>
-            <a href="redactor@center-nauki.ru">redactor@center-nauki.ru</a>
+            <a href="mailto:redactor@center-nauki.ru">redactor@center-nauki.ru</a>
           </div>
           <div class="header__score">
             <div class="citescore">
